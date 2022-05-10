@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="icon" href="./favicon.ico">-->
+
+    <script src="./resource/js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js"></script>
+    <script src="./resource/js/slick.js"></script>
+    <script src="./resource/js/common.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./resource/css/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css">
+    <link rel="stylesheet" href="./resource/css/content.css">
+
+    <title>충남체육회</title>
+</head>
+
+<body>
+    <div class="section00 top_popUp">
+        <div class="popUp_wrap">
+            <div class="con">
+                <div class="text_section">
+                    <div class="index">
+                        <span class="title">제<span>24회</span> 베이징 동계올림픽</span>
+                        <p class="schedule">2022년 12월 01일 (월) ~ 12월 31일 (화)</p>
+                    </div>
+                    <div class="d-day">
+                        <span class="d">D - </span>
+                        <span class="style_text">3</span>
+                        <span class="style_text">0</span>
+                        <span class="style_text">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header_top">
+            <div class="con popUp_alert">
+                <div class="text_section">
+                    <span>제 24회 베이징 동계올림픽</span>
+                    <span>2022년 12월 01일 (월) ~ 12월 31일 (화)</span>
+                    <span>D-300</span>
+                </div>
+                <div class="popUp_open">
+                    <button>
+                        <span>팝업</span>
+                        <span class="off active">닫기</span>
+                        <span class="on">열기</span>
+                        <i class="ri-arrow-up-s-line arrow"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header_middle">
+            <div class="header_inner con">
+                <h1 class="logo">
+                    <img src="./resource/img/logo_color.png" alt="홈으로이동">
+                </h1>
+                <ul class="util">
+                    <li>
+                        <a href="#">홈으로
+                            <i class="ri-home-line"></i>
+                        </a>
+                    </li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <ul id="gnb" class="nav_list con">
+                <li>
+                    <a class="nav_name" href="#">알림마당</a>
+                    <div class="nav_2depth">
+                        <div class="left_wrap">
+                            <h2>알림마당</h2>
+                        </div>
+                        <div class="right_wrap">
+                            <ul class="nav_2depth_list">
+                                <li class="nav_2depth_li"><a href="#">공지사항</a></li>
+                                <li class="nav_2depth_li"><a href="#">채용·입찰</a></li>
+                                <li class="nav_2depth_li"><a href="#">주간일정</a></li>
+                                <li class="nav_2depth_li"><a href="#">행사일정</a></li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">체육회소식</a>
+                                    <ul>
+                                        <li><a href="#">구) 체육회 소식</a></li>
+                                        <li><a href="#">언론속의 충남체육</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav_2depth_li"><a href="#">뉴스레터</a></li>
+                                <li class="nav_2depth_li"><a href="#">동호인 관리서비스</a></li>
+                                <li class="nav_2depth_li"><a href="#">포토갤러리</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav_name" href="#">정보마당</a>
+                    <div class="nav_2depth">
+                        <div class="left_wrap">
+                            <h2>정보마당</h2>
+                        </div>
+                        <div class="right_wrap">
+                            <ul class="nav_2depth_list">
+                                <li class="nav_2depth_li"><a href="#">자료실</a></li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">생활체육정보</a>
+                                    <ul>
+                                        <li><a href="#">스포츠 7330</a></li>
+                                        <li><a href="#">생활체육 영상</a></li>
+                                        <li>
+                                            <a class="link" href="#">생활체육정보포털
+                                                <i class="ri-external-link-line"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav_name" href="#">참여마당</a>
+                    <div class="nav_2depth">
+                        <div class="left_wrap">
+                            <h2>참여마당</h2>
+                        </div>
+                        <div class="right_wrap">
+                            <ul class="nav_2depth_list">
+                                <li class="nav_2depth_li"><a href="#">충남체육회에 바란다</a></li>
+                                <li class="nav_2depth_li"><a href="#">Q&A</a></li>
+                                <li class="nav_2depth_li"><a href="#">스포츠윤리센터</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="nav_name" href="#">체육소식</a>
+                    <div class="nav_2depth">
+                        <div class="left_wrap">
+                            <h2>체육소식</h2>
+                        </div>
+                        <div class="right_wrap">
+                            <ul class="nav_2depth_list">
+                                <li class="nav_2depth_li"><a href="#">회원종목단체현황</a></li>
+                                <li class="nav_2depth_li"><a href="#">회원종목단체 경영공시</a></li>
+                                <li class="nav_2depth_li"><a href="#">시 · 군 체육회 현황</a></li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">선수 및 팀 등록 현황
+                                        <i class="ri-external-link-line"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="nav_name" href="#">경기결과</a>
+                    <div class="nav_2depth">
+                        <div class="left_wrap">
+                            <h2>경기결과</h2>
+                        </div>
+                        <div class="right_wrap">
+                            <ul class="nav_2depth_list">
+                                <li class="nav_2depth_li"><a href="#">전국체전</a></li>
+                                <li class="nav_2depth_li"><a href="#">소년체전</a></li>
+                                <li class="nav_2depth_li"><a href="#">동계체전</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="nav_name" href="#">충청남도체육대회</a>
+                    <div class="nav_2depth">
+                        <div class="left_wrap">
+                            <h2>충청남도체육대회</h2>
+                        </div>
+                        <div class="right_wrap">
+                            <ul class="nav_2depth_list">
+                                <li class="nav_2depth_li"><a href="#">약사</a></li>
+                                <li class="nav_2depth_li"><a href="#">역대 경기결과</a></li>
+                                <li class="nav_2depth_li"><a href="#">자료실</a></li>
+                                <li class="nav_2depth_li"><a href="#">정보시스템
+                                    <i class="ri-external-link-line"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a class="nav_name" href="#">체육회소개</a>
+                    <div class="nav_2depth">
+                        <div class="left_wrap">
+                            <h2>체육회소개</h2>
+                        </div>
+                        <div class="right_wrap">
+                            <ul class="nav_2depth_list">
+                                <li class="nav_2depth_li"><a href="#">인사말</a></li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">일반현황</a>
+                                    <ul>
+                                        <li><a href="#">일반현황</a></li>
+                                        <li><a href="#">VISION</a></li>
+                                        <li><a href="#">CI</a></li>
+                                        <li><a href="#">충남체육100년사</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">부서안내</a>
+                                    <ul>
+                                        <li><a href="#">조직도</a></li>
+                                        <li><a href="#">직원현황</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">임원현황</a>
+                                    <ul>
+                                        <li><a href="#">현재임원</a></li>
+                                        <li><a href="#">역대회장</a></li>
+                                        <li><a href="#">역대사무처장</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">경영공시</a>
+                                    <ul>
+                                        <li><a href="#">경영목표 및 주요사업</a></li>
+                                        <li><a href="#">예산 및 결산</a></li>
+                                        <li><a href="#">기금현황</a></li>
+                                        <li><a href="#">주요회의 결과</a></li>
+                                        <li><a href="#">업무추진비</a></li>
+                                        <li><a href="#">경영실적평가</a></li>
+                                        <li><a href="#">수의계약</a></li>
+                                        <li><a href="#">감사결과</a></li>
+                                        <li><a href="#">기타사항</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">관련규정</a>
+                                </li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">지속가능경영</a>
+                                </li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">체육인인권헌장</a>
+                                </li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">고객서비스헌장</a>
+                                    <ul>
+                                        <li><a href="#">고객서비스헌장</a></li>
+                                        <li><a href="#">일반사항</a></li>
+                                        <li><a href="#">서비스 이행 기준</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav_2depth_li">
+                                    <a href="#">찾아오시는길</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <div class="mobile_header">
+        <div class="inner">
+            <h2><img src="./resource/img/logo_color.png" alt="홈으로"></h2>
+            <div class="m_menu">
+                <img src="./resource/img/icon_mobile_menu.png" alt="메뉴열기">
+            </div>
+        </div>
+    </div>
+
+    <div class="section section01">
+        <div class="wrap">
+            <div class="main_slide">
+                <div class="slide_item slide_item01">
+                    <div class="slide_text">
+                        <span class="top_text">함께하는 스포츠로<br></span>
+                        <span class="last_text">
+                            <span style="color:#FFA229">더 행복한 <span style="color:#102072">충남도민</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="slide_item slide_item02">
+                    <div class="slide_text">
+                        <span class="top_text" style="color:#ffffff;">스포츠정신이 살아있는곳<br></span>
+                        <span class="last_text" style="color:#ffffff;">
+                            <span style="color:#FFA229;">역동</span>과 <span style="color:#FFCD27;">활력</span>이 넘치는 <span style="color:#ADEB41;">충청남도 체육회</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="slide_item slide_item03">
+                    <div class="slide_text">
+                        <span class="top_text" style="color:#443939;">국가대표선수와 동일한 스포츠과학지원<br></span>
+                        <span class="last_text">
+                            <span style="color:#102072">충남</span><span style="color:#FFA229;">스포츠과학센터</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="slide_item slide_item04">
+                    <div class="slide_text">
+                        <span class="top_text" style="color: #ffffff;">일주일에 세번 이상, 하루30분 운동<br></span>
+                        <span class="last_text">
+                            <span style="color:#FFA229">스포츠 7330</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide_control">
+            <button class="prev_btn"></button>
+            <button class="stop_btn"></button>
+            <button class="start_btn active"></button>
+            <button class="next_btn"></button>
+            <div class="line"></div>
+            <div class="num-box">
+                <span class="current-num">1</span>
+                <span class="total-num">/ 4</span>
+            </div>
+        </div>
+        <div class="direct_btn_wrap">
+            <a class="direct_btn direct_btn01" href="#">
+                <img src="./resource/img/icon_section01_01.png" alt="#">
+                <span>스포츠 윤리센터</span>
+            </a>
+            <a class="direct_btn direct_btn02" href="#">
+                <img src="./resource/img/icon_section01_02.png" alt="#">
+                <span>체육정보시스템</span>
+            </a>
+            <a class="direct_btn direct_btn03" href="#">
+                <img src="./resource/img/icon_section01_03.png" alt="#">
+                <span>스포츠 지원포털</span>
+            </a>
+            <a class="direct_btn direct_btn04" href="#">
+                <img src="./resource/img/icon_section01_04.png" alt="#">
+                <span>충청남도체육대회<br>정보시스템</span>
+            </a>
+        </div>
+        <div class="content_nav"><div>
+                <div class="nav_wrap">
+                    <a href="#">
+                        <div class="icon_bg"></div>
+                        <span>규정안내</span>
+                    </a>
+                    <a href="#">
+                        <div class="icon_bg"></div>
+                        <span>직원안내</span>
+                    </a>
+                    <a href="#">
+                        <div class="icon_bg"></div>
+                        <span>경영공시</span>
+                    </a>
+                    <a href="#">
+                        <div class="icon_bg"></div>
+                        <span>정보공개</span>
+                    </a>
+                </div>
+            </div>
+            <button class="nav_prev_btn"></button>
+            <button class="nav_next_btn"></button>
+        </div>
+    </div>
+    <div class="section section02">
+        <div class="con">
+            <div class="notice_wrap">
+                <ul class="tap">
+                    <li class="active"><a href="javascript:;"><h3>공지사항</h3></a></li>
+                    <li><a href="javascript:;"><h3>채용/입찰</h3></a></li>
+                    <li><a href="javascript:;"><h3>자료실</h3></a></li>
+                    <li><a href="javascript:;"><h3>주간일정</h3></a></li>
+                    <li><a href="#" class="more"></a></li>
+                </ul>
+                <div class="notice_list_wrap">
+                    <ul class="notice_item">
+                        <li>
+                            <a href="#">
+                                <span class="tit">서천군체육회 전문체육지도자 채용공고</span>
+                                <p class="text">2022 충청남도체육대회 참가요강 입니다.기간: 2022. 9. 29.(목) ~ 10. 2.(일)장소: 보령시 일원종목: 검도 등 30종목(정식 29, 시범 1)</p>
+                                <div class="info">
+                                    <span class="date">2021.12.31</span>
+                                    <span class="writter">충남체육회</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">충청남도에어로빅힙합협회 회장 당선인 공고</span>
+                                <p class="text">충청남도에어로빅힙합협회 회장 당선인 등록 공고를 게시합니다.</p>
+                                <div class="info">
+                                    <span class="date">2021.12.31</span>
+                                    <span class="writter">충남체육회</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="tit">걷쥬 20만명 달성 이벤트</span>
+                                <p class="text">안녕하세요. 걷쥬 운영자 입니다. 충남형 스포츠 복지 일환으로 추진 중인 "함께하는 행복걷기" 걷쥬 앱이 5월 가정의 달을 맞이 하여 한달간 "걷쥬가 쏜다" 이벤트를 실시합니다. 많은 참여와 홍보 부탁드립니다</p>
+                                <div class="info">
+                                    <span class="date">2021.12.31</span>
+                                    <span class="writter">충남체육회</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="prev_btn"></button>
+                    <button class="next_btn"></button>
+                </div>
+            </div>
+            <div class="new_letter">
+                <div>
+                    <h3>뉴스레터</h3>
+                    <a href="#" class="more"></a>
+                </div>
+                <div class="letter_img_wrap">
+                    <img src="./resource/img/new_letter.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section03">
+        <div class="con">
+            <button class="app_download" >다운로드 페이지 바로가기</button>
+        </div>
+    </div>
+    <div class="section section04">
+        <div class="opacity">
+            <div class="con">
+                <div class="alert_zone">
+                    <div class="title_wrap">
+                        <h3>알림존</h3>
+                        <div class="slide_control">
+                            <button class="prev_btn"></button>
+                            <button class="stop_btn"></button>
+                            <button class="start_btn active"></button>
+                            <button class="next_btn"></button>
+                        </div>
+                    </div>
+                    <div class="alert_slide">
+                        <a class="item item01" href="#">
+                            <img src="./resource/img/section04_alert_img01.png" alt="">
+                        </a>
+                        <a class="item item01" href="#">
+                            <img src="./resource/img/section04_alert_img01.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="photo_gallery">
+                    <div class="title_wrap">
+                        <h3>포토갤러리</h3>
+                        <a href="#" class="more"></a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="./resource/img/photo01.png" alt="#">
+                                <span>조한영 충남체육회 사무처장 '저출산극복을 위한 기부금 조성 </span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="img_wrap">
+                                <img src="./resource/img/photo02.png" alt="#">
+                                <span>제48회 전국소년체육대회</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="con section04_bot_wrap">
+                <div class="history">
+                    <h3>충남체육 100주년</h3>
+                    <p>충남체육회의 커다란 발자취가 고스란히 담겨 있습니다.</p>
+                </div>
+                <div class="sns_wrap">
+                    <h3><span>충남 체육회 소식</span>을 SNS에서<br>확인해보세요</h3>
+                    <ul class="sns_btn_wrap">
+                        <li class="youtube"><a class="youtube" href="#"><b>유튜브</b> 바로가기</a></li>
+                        <li class="blog"><a class="blog" href="#"><b>블로그</b> 바로가기</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section05 banner">
+        <div class="con">
+            <div class="controller">
+                <h3>배너모음</h3>
+                <div class="slide_control">
+                    <button class="prev_btn"></button>
+                    <button class="stop_btn"></button>
+                    <button class="start_btn active"></button>
+                    <button class="next_btn"></button>
+                </div>
+            </div>
+            <ul class="banner_slide">
+                <li><a href="#"><img src="../cnsport/resource/img/banner01.png" alt="충청남도"></a></li>
+                <li><a href="#"><img src="../cnsport/resource/img/banner02.png" alt="충청남도체육대회 정보시스템"></a></li>
+                <li><a href="#"><img src="../cnsport/resource/img/banner03.png" alt="스포츠윤리센터"></a></li>
+                <li><a href="#"><img src="../cnsport/resource/img/banner04.png" alt="라이프플래닛"></a></li>
+                <li><a href="#"><img src="../cnsport/resource/img/banner05.png" alt="충남 대학스포츠 대제전"></a></li>
+                <li><a href="#"><img src="../cnsport/resource/img/banner06.png" alt="스포츠지원포털"></a></li>
+                <li><a href="#"><img src="../cnsport/resource/img/banner07.png" alt="대한체육회"></a></li>
+                <li><a href="#"><img src="../cnsport/resource/img/banner08.png" alt="문치과병원"></a></li>
+                <li><a href="#"><img src="../cnsport/resource/img/banner09.png" alt="대한체육회 koc tv"></a></li>
+                <li><a href="#"><img src="../cnsport/resource/img/banner10.png" alt="충청남도 계룡시"></a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_top">
+            <div class="con">
+                <ul class="list">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일주소 무단수집거부</a></li>
+                    <li><a href="#">홈페이지오류신고</a></li>
+                    <li><a href="#">찾아오시는길</a></li>
+                </ul>
+                <ul class="util">
+                    <li><a class="youtube" href="#">
+                        <img src="./resource/img/icon_sns_youtube.png" alt="유튜브 바로가기">
+                    </a></li>
+                    <li><a class="blog" href="#">
+                        <img src="./resource/img/icon_sns_blog.png" alt="블로그 바로가기">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_middle">
+            <ul class="con family_site">
+                <li>
+                    <a href="javascript:;">체육관련 사이트</a>
+                    <ul>
+                        <li><a href="https://kspo.or.kr/sportsmuseum" title="새창" target="_blank">국립체육박물관</a></li>
+                        <li><a href="https://www.kspo.or.kr/kspo/main/main.do" title="새창" target="_blank">국민체육진흥공단</a></li>
+                        <li><a href="https://www.sports.or.kr/index.do" title="새창" target="_blank">대한체육회</a></li>
+                        <li><a href="https://www.kada-ad.or.kr/" title="새창" target="_blank">한국도핑방지위원회</a></li>
+                        <li><a href="https://www.sports.re.kr/" title="새창" target="_blank">한국스포츠정책과학원</a></li>
+                        <li><a href="http://phywomen.or.kr/" title="새창" target="_blank">한국여성체육학회</a></li>
+                        <li><a href="https://www.knsu.ac.kr/" title="새창" target="_blank">한국체육대학교</a></li>
+                        <li><a href="http://www.kahperd.or.kr/" title="새창" target="_blank">한국체육학회</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">충남관련 사이트</a>
+                    <ul>
+                        <li><a href="http://www.ggilbo.com/" title="새창" target="_blank">금강일보</a></li>
+                        <li><a href="https://daejeon.kbs.co.kr/" title="새창" target="_blank">대전 KBS</a></li>
+                        <li><a href="https://tjmbc.co.kr/" title="새창" target="_blank">대전 MBC</a></li>
+                        <li><a href="http://www.tjb.co.kr/" title="새창" target="_blank">대전 TJB</a></li>
+                        <li><a href="http://www.daejonilbo.com/" title="새창" target="_blank">대전일보</a></li>
+                        <li><a href="http://www.dtnews24.com/" title="새창" target="_blank">디트뉴스24</a></li>
+                        <li><a href="http://www.joongdo.co.kr/web/" title="새창" target="_blank">중도일보</a></li>
+                        <li><a href="https://www.cwpdi.re.kr/" title="새창" target="_blank">충남여성가족연구원</a></li>
+                        <li><a href="https://www.cihc.or.kr/" title="새창" target="_blank">충남역사문화연구원</a></li>
+                        <li><a href="https://www.cni.re.kr/main/main.do" title="새창" target="_blank">충남연구원</a></li>
+                        <li><a href="https://www.cnsad.or.kr/index.do" title="새창" target="_blank">충남장애인체육회</a></li>
+                        <li><a href="https://safe.chungnam.go.kr/main.do" title="새창" target="_blank">충남재해대책본부</a></li>
+                        <li><a href="http://www.cne.go.kr/cne_intro.html" title="새창" target="_blank">충청남도교육청</a></li>
+                        <li><a href="http://council.chungnam.go.kr/" title="새창" target="_blank">충청남도의회</a></li>
+                        <li><a href="http://www.chungnam.go.kr/" title="새창" target="_blank">충청남도청</a></li>
+                        <li><a href="https://www.cctoday.co.kr/" title="새창" target="_blank">충청투데이</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">시·도 체육회 사이트</a>
+                    <ul>
+                        <li><a href="https://www.seoulsports.or.kr/home/homeIndex.do" title="새창" target="_blank">서울특별시체육회</a></li>
+                        <li><a href="http://www.sports.busan.kr/" title="새창" target="_blank">부산광역시체육회</a></li>
+                        <li><a href="http://www.daegusports.or.kr/" title="새창" target="_blank">대구광역시체육회</a></li>
+                        <li><a href="https://www.icsports.or.kr/fmcs/1" title="새창" target="_blank">인천광역시체육회</a></li>
+                        <li><a href="https://www.gwangjusports.org/index.php" title="새창" target="_blank">광주광역시체육회</a></li>
+                        <li><a href="https://www.djsc.or.kr/" title="새창" target="_blank">대전광역시체육회</a></li>
+                        <li><a href="http://www.ussc.or.kr/" title="새창" target="_blank">울산광역시체육회</a></li>
+                        <li><a href="http://www.sejongsc.or.kr/" title="새창" target="_blank">세종특별자치시체육회</a></li>
+                        <li><a href="https://ggsports.gg.go.kr/" title="새창" target="_blank">경기도체육회</a></li>
+                        <li><a href="http://www.gwsports.or.kr/" title="새창" target="_blank">강원도체육회</a></li>
+                        <li><a href="http://www.cbsports.or.kr/main.php" title="새창" target="_blank">충청북도체육회</a></li>
+                        <li><a href="http://www.jbsports.or.kr/" title="새창" target="_blank">전라북도체육회</a></li>
+                        <li><a href="https://www.jnsports.or.kr/" title="새창" target="_blank">전라남도체육회</a></li>
+                        <li><a href="http://main.gbsports.or.kr/sports/main/index.php" title="새창" target="_blank">경상북도체육회</a></li>
+                        <li><a href="http://www.gnsports.or.kr/index.do" title="새창" target="_blank">경상남도체육회</a></li>
+                        <li><a href="http://www.jejusports.or.kr/" title="새창" target="_blank">제주특별자치도체육회 </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">중앙종목단체 사이트</a>
+                    <ul href="#family4" id="family4">
+                        <li><a href="http://www.kumdo.org/" title="새창" target="_blank">검도</a></li>
+                        <li><a href="http://www.gateball.or.kr" title="새창" target="_blank">게이트볼</a></li>
+                        <li><a href="http://www.kgagolf.or.kr/" title="새창" target="_blank">골프</a></li>
+                        <li><a href="http://www.sportskigong.org" title="새창" target="_blank">국학기공</a></li>
+                        <li><a href="http://kungdo.or.kr/" title="새창" target="_blank">궁도</a></li>
+                        <li><a href="http://kgga7330.or.kr" title="새창" target="_blank">그라운드골프</a></li>
+                        <li><a href="http://www.pentathlon.or.kr/" title="새창" target="_blank">근대5종</a></li>
+                        <li><a href="https://www.koreabasketball.or.kr/main/index.php" title="새창" target="_blank">농구</a></li>
+                        <li><a href="http://www.kbfsports.or.kr/" title="새창" target="_blank">당구</a></li>
+                        <li><a href="http://www.kfd.or.kr/" title="새창" target="_blank">댄스스포츠</a></li>
+                        <li><a href="http://www.rugby.or.kr/Index" title="새창" target="_blank">럭비</a></li>
+                        <li><a href="http://www.kor-wrestling.or.kr/wrestling/main/main.asp" title="새창" target="_blank">레슬링</a></li>
+                        <li><a href="http://koreaskate.or.kr/" title="새창" target="_blank">롤러스포츠</a></li>
+                        <li><a href="http://luge.sports.or.kr/servlets/org/front/Main" title="새창" target="_blank">루지</a></li>
+                        <li><a href="http://www.baduk.or.kr/" title="새창" target="_blank">바둑</a></li>
+                        <li><a href="http://www.korbia.or.kr/" title="새창" target="_blank">바이애슬론</a></li>
+                        <li><a href="https://www.kva.or.kr/" title="새창" target="_blank">배구</a></li>
+                        <li><a href="http://www.koreabadminton.org/" title="새창" target="_blank">배드민턴</a></li>
+                        <li><a href="http://bodybuilding.sports.or.kr/" title="새창" target="_blank">보디빌딩</a></li>
+                        <li><a href="http://boxing.sports.or.kr/" title="새창" target="_blank">복싱</a></li>
+                        <li><a href="http://www.bowling.or.kr/" title="새창" target="_blank">볼링</a></li>
+                        <li><a href="http://www.kbsf.co.kr/" title="새창" target="_blank">봅슬레이스켈레톤</a></li>
+                        <li><a href="https://www.skating.or.kr/index.do" title="새창" target="_blank">빙상</a></li>
+                        <li><a href="http://www.shooting.or.kr/" title="새창" target="_blank">사격</a></li>
+                        <li><a href="https://www.kaf.or.kr/" title="새창" target="_blank">산악</a></li>
+                        <li><a href="http://sepaktakraw.sports.or.kr/" title="새창" target="_blank">세팍타크로</a></li>
+                        <li><a href="http://softtennis.sports.or.kr/servlets/org/front/Main" title="새창" target="_blank">소프트테니스</a></li>
+                        <li><a href="http://www.waterskinet.org/" title="새창" target="_blank">수상스키</a></li>
+                        <li><a href="https://www.korswim.co.kr/" title="새창" target="_blank">수영</a></li>
+                        <li><a href="http://kua.or.kr/" title="새창" target="_blank">수중핀수영</a></li>
+                        <li><a href="http://www.koreasquash.or.kr/" title="새창" target="_blank">스쿼시</a></li>
+                        <li><a href="http://ski.sports.or.kr/" title="새창" target="_blank">스키</a></li>
+                        <li><a href="http://kef.sports.or.kr/servlets/org/front/Main" title="새창" target="_blank">승마</a></li>
+                        <li><a href="http://ssireum.sports.or.kr/gnb/index.php" title="새창" target="_blank">씨름</a></li>
+                        <li><a href="http://kiha.or.kr/" title="새창" target="_blank">아이스하키</a></li>
+                        <li><a href="http://www.korea-baseball.com/" title="새창" target="_blank">야구소프트볼</a></li>
+                        <li><a href="https://www.archery.or.kr/archer/main/archeryMan.do" title="새창" target="_blank">양궁</a></li>
+                        <li><a href="http://www.aerobic.or.kr/" title="새창" target="_blank">에어로빅힙합</a></li>
+                        <li><a href="http://www.weightlifting.or.kr/2015/main/" title="새창" target="_blank">역도</a></li>
+                        <li><a href="https://ksaf.org:447/" title="새창" target="_blank">요트</a></li>
+                        <li><a href="http://wushu.sports.or.kr/" title="새창" target="_blank">우슈</a></li>
+                        <li><a href="http://judo.sports.or.kr/" title="새창" target="_blank">유도</a></li>
+                        <li><a href="http://www.kaaf.or.kr/ver3/main/main.asp" title="새창" target="_blank">육상</a></li>
+                        <li><a href="https://cycling.or.kr/" title="새창" target="_blank">자전거</a></li>
+                        <li><a href="http://rowing.sports.or.kr/" title="새창" target="_blank">조정</a></li>
+                        <li><a href="http://www.jokgu.or.kr" title="새창" target="_blank">족구</a></li>
+                        <li><a href="http://www.skiprope.co.kr" title="새창" target="_blank">줄넘기</a></li>
+                        <li><a href="https://www.triathlon.or.kr:453/" title="새창" target="_blank">철인3종</a></li>
+                        <li><a href="http://www.gymnastics.or.kr/main/" title="새창" target="_blank">체조</a></li>
+                        <li><a href="https://www.kfa.or.kr/" title="새창" target="_blank">축구</a></li>
+                        <li><a href="http://www.canoe.or.kr/" title="새창" target="_blank">카누</a></li>
+                        <li><a href="http://www.koreacurling.co.kr/" title="새창" target="_blank">컬링</a></li>
+                        <li><a href="http://www.koreatta.or.kr/servlets/org/Main" title="새창" target="_blank">탁구</a></li>
+                        <li><a href="http://www.koreataekwondo.org/" title="새창" target="_blank">태권도</a></li>
+                        <li><a href="http://www.koreataekkyon.com/taekkyon/" title="새창" target="_blank">택견</a></li>
+                        <li><a href="http://www.kortennis.co.kr/" title="새창" target="_blank">테니스</a></li>
+                        <li><a href="http://kpga7330.com/" title="새창" target="_blank">파크골프</a></li>
+                        <li><a href="http://www.kpga.or.kr/" title="새창" target="_blank">패러글라이딩</a></li>
+                        <li><a href="http://fencing.sports.or.kr/" title="새창" target="_blank">펜싱</a></li>
+                        <li><a href="http://www.koreahockey.co.kr/" title="새창" target="_blank">하키</a></li>
+                        <li><a href="http://www.hapkido7330.com" title="새창" target="_blank">합기도</a></li>
+                        <li><a href="https://www.handballkorea.com/" title="새창" target="_blank">핸드볼</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">시군체육회 사이트</a>
+                    <ul>
+                        <li><a href="https://casports.or.kr/" title="새창" target="_blank">천안시체육회</a></li>
+                        <li><a href="http://www.gongjusportal.com/" title="새창" target="_blank">공주시체육회</a></li>
+                        <li><a href="http://www.brsports.or.kr/" title="새창" target="_blank">보령시체육회</a></li>
+                        <li><a href="http://www.asansports.org/sports/" title="새창" target="_blank">아산시체육회</a></li>
+                        <li><a href="http://www.ssports.org/" title="새창" target="_blank">서산시체육회</a></li>
+                        <li><a href="http://grsports.or.kr/" title="새창" target="_blank">계룡시체육회</a></li>
+                        <li><a href="http://www.dangjinsports.com/" title="새창" target="_blank">당진시체육회</a></li>
+                        <li><a href="https://geumsansports.or.kr/" title="새창" target="_blank">금산군체육회</a></li>
+                        <li><a href="http://buyeosports.co.kr/" title="새창" target="_blank">부여군체육회</a></li>
+                        <li><a href="http://www.sscsports.or.kr/kor/" title="새창" target="_blank">서천군체육회</a></li>
+                        <li><a href="https://hongseongsports.com/" title="새창" target="_blank">홍성군체육회</a></li>
+                        <li><a href="https://yesansports.com/" title="새창" target="_blank">예산군체육회</a></li>
+                        <li><a href="http://www.태안군체육회.com/" title="새창" target="_blank">태안군체육회</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">종목단체 사이트</a>
+                    <ul>
+                        <li><a href="http://www.chungnamkumdo.org/" title="새창" target="_blank">충남검도회</a></li>
+                        <li><a href="http://chungnamgolf.net/" title="새창" target="_blank">충남골프협회</a></li>
+                        <li><a href="http://boxing.sports.or.kr/servlets/front/sido/action/SidoMain?sido_cd=12" title="새창" target="_blank">충남복싱협회</a></li>
+                        <li><a href="http://cnyacht.kr/" title="새창" target="_blank">충남요트협회</a></li>
+                        <li><a href="http://cnjudo.com/" title="새창" target="_blank">충남유도회</a></li>
+                        <li><a href="http://www.cnfa.co.kr/main/index.php" title="새창" target="_blank">충남축구협회</a></li>
+                        <li><a href="http://www.cncanoe.or.kr/" title="새창" target="_blank">충남카누협회</a></li>
+                        <li><a href="http://cntt.pingpongkorea.com/" title="새창" target="_blank">충남탁구협회</a></li>
+                        <li><a href="http://www.cnta.or.kr/www/" title="새창" target="_blank">충남태권도협회</a></li>
+                        <li><a href="http://www.cntennis.net/" title="새창" target="_blank">충남테니스협회</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="con inner">
+                <h2><img src="./resource/img/logo_white.png" alt="홈으로"></h2>
+                <div class="adress">
+                    <span>[32256] 충청남도 홍성군 홍북읍 청사로174번길 25, 성원타워 5층<br>전화 : 041-635-0100 / 팩스 : 041-635-0104</span>
+                    <p>COPYRIGHTⓒ2022 CHUNGNAM SPORTS COUNCIL. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="go_top"><a href="javascript:;">TOP</a></div>
+</body>
+</html>
