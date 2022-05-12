@@ -9,6 +9,7 @@ $(document).ready(function(){
         $(".section00").toggleClass("active");
         $("header .header_top .con .popUp_open button span.on").toggleClass("active");
         $("header .header_top .con .popUp_open button span.off").toggleClass("active");
+        return false;
     });
 
     //nav오픈
@@ -19,6 +20,20 @@ $(document).ready(function(){
     $(".nav").mouseleave(function(){
         $("#gnb > li").removeClass("active");
     });
+
+    //풀메뉴 관련
+    $(function(){
+        $("header .nav button").click(function(){
+            $("header .nav button img").toggleClass("active");
+            $("header .nav .full_menu").toggleClass("active");
+            $("header .nav button").toggleClass("open");
+            if($("header .nav .full_menu").hasClass("active")){
+                $(window).scrollTop(0);
+                $('html').css({'overflow' : 'hidden','height' : '100vh'});
+            }else{ $('html').css({ 'overflow' : 'inherit' , 'height' : 'auto' }); }
+        });
+    });
+    
 
     //메인비주얼 슬라이드
     $(".main_slide").slick({
@@ -109,11 +124,15 @@ $(document).ready(function(){
         prevArrow : $(".section05 .slide_control .prev_btn"),
         nextArrow : $(".section05 .slide_control .next_btn"),
     });
-
     //푸터 패밀리사이트
     $("footer .footer_middle .family_site li").click(function(){
         $("footer .footer_middle .family_site li").removeClass("active");
         $(this).toggleClass("active");
+        return false;
     });
     
+	$(document).click(function(){
+		$("footer .footer_middle .family_site li").removeClass('active');
+	});
+
 });
