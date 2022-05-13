@@ -136,6 +136,15 @@ $(document).ready(function(){
 	});
 
 
+    //모바일 햄버거
+    $(".mobile_header .inner .m_menu").click(function(){
+        $(".mobile_header .opacity").addClass("active");
+        $(".mobile_header .nav_wrap").addClass("active");
+    });
+    $(".mobile_header .nav_wrap .mobile_nav_top .mobile_close").click(function(){
+        $(".mobile_header .opacity").removeClass("active");
+        $(".mobile_header .nav_wrap").removeClass("active");
+    });
     //모바일 nav_2depth 아코디언
     $(".mobile_header .nav_wrap .nav_1depth > ul > li > div ul li").click(function() {
         if ( $(this).hasClass('active') ) {
