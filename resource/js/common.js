@@ -135,4 +135,16 @@ $(document).ready(function(){
 		$("footer .footer_middle .family_site li").removeClass('active');
 	});
 
+
+    //모바일 nav_2depth 아코디언
+    $(".mobile_header .nav_wrap .nav_1depth > ul > li > div ul li").click(function() {
+        if ( $(this).hasClass('active') ) {
+            $(this).find(' > ul').stop().slideUp(300);
+            $(this).removeClass('active');
+        }
+        else {
+            $(this).find(' > ul').stop().slideDown(300);
+            $(this).addClass('active');
+        }
+    });
 });
