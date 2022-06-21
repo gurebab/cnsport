@@ -140,12 +140,18 @@ $(document).ready(function(){
     $(".mobile_header .inner .m_menu").click(function(){
         $(".mobile_header .opacity").addClass("active");
         $(".mobile_header .nav_wrap").addClass("active");
+        $("body").addClass("active");
     });
     $(".mobile_header .nav_wrap .mobile_nav_top .mobile_close").click(function(){
         $(".mobile_header .opacity").removeClass("active");
         $(".mobile_header .nav_wrap").removeClass("active");
+        $("body").removeClass("active");
     });
-    //모바일 nav_2depth 아코디언
+    //모바일 nav_2depth
+    $(".mobile_header .nav_wrap .nav_1depth > ul > li").click(function(){
+        $(".mobile_header .nav_wrap .nav_1depth > ul > li").removeClass("active");
+        $(this).addClass("active");
+    });
     $(".mobile_header .nav_wrap .nav_1depth > ul > li > div ul li").click(function() {
         if ( $(this).hasClass('active') ) {
             $(this).find(' > ul').stop().slideUp(300);
